@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Maria Dalanda Billy Diallo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<body>
+
+    
+    <nav class="navbar">
+        <span class="nav-brand">Maria D. B. Diallo</span>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#section-qualites">Qualités</a></li>
+            <li><a href="#section-parcours">Parcours</a></li>
+            <li><a href="#section-loisirs">Loisirs</a></li>
+            <li><a href="#section-projets">Projets</a></li>
+            <li><a href="#section-contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="sidbar">
+        <img class="profile-photo" src="photo profil.PNG" alt="photo">
+        <h3><em>MARIA DALANDA BILLY DIALLO</em></h3>
+        <h6> (Etudiante en licence 2 informatique )</h6>
+        <hr>
+
+        <p>
+            📅 02/05/2006 <br>
+            📍 Dakar, SENEGAL <br>
+            📞 <a href="tel:774621683">774621683</a><br>
+            📧 <a href="mailto:diallomaria238@gmail.com">diallomaria238@gmail.com</a>
+        </p><hr>
+
+        <h3 id="style">PROFIL</h3>
+        <p>Étudiante en Licence 2 Génie Informatique, je suis passionnée par les langages de programmation et les nouvelles technologies. Motivée, rigoureuse et sérieuse, je souhaite développer mes compétences à travers des projets académiques et professionnels ambitieux.</p><hr>
+
+        <h3 id="style">COMPÉTENCES</h3>
+        <ul>
+            <li>
+                <span class="comp-label">Bases de données</span>
+                <div class="barre"><div class="remplissage" data-niveau="70"></div></div>
+            </li>
+            <li>
+                <span class="comp-label">Programmation</span>
+                <div class="barre"><div class="remplissage" data-niveau="75"></div></div>
+            </li>
+            <li>
+                <span class="comp-label">Microsoft Word</span>
+                <div class="barre"><div class="remplissage" data-niveau="90"></div></div>
+            </li>
+        </ul><hr>
+
+        <h3><u>LANGUES</u></h3>
+        <ul class="langues-list">
+            <li>🇫🇷 Français : niveau élévé</li>
+            <li>🇸🇳 Wolof : niveau elévé</li>
+            <li>🇸🇳 Poular : langue maternelle</li>
+            <li>🇬🇧 Anglais : niveau moyen</li>
+        </ul>
+    </div>
+
+   
+    <div class="content">
+
+        <h3 id="section-qualites">QUALITÉS PERSONNELLES</h3>
+        <ul>
+            <li>Esprit d'équipe</li>
+            <li>Sérieuse et motivée</li>
+            <li>Sens de l'organisation</li>
+        </ul><hr>
+
+        <h4 id="section-parcours"> PARCOURS ACADÉMIQUE</h4>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <strong>Licence 2 Informatique</strong>
+                    <span class="timeline-date">2025 - 2026</span>
+                    <p>Université IBA DER THIAM DE THIÈS</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <strong>Licence 1 Informatique</strong>
+                    <span class="timeline-date">2024 - 2025</span>
+                    <p>Université IBA DER THIAM DE THIÈS</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <strong>Baccalauréat</strong>
+                    <span class="timeline-date">2023 - 2024</span>
+                    <p>Lycée Plan Jaxaay</p>
+                </div>
+            </div>
+        </div><hr>
+
+        <h3 id="section-loisirs"> LOISIRS</h3>
+        <ul>
+            <li>Danse</li>
+            <li>Natation</li>
+            <li>Cuisine</li>
+        </ul><hr>
+
+        <h3 id="section-projets">💻 PROJETS ACADÉMIQUES</h3>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <h4>Système de gestion hospitalière</h4>
+                <p>Conception et développement d'une application de gestion pour établissement de santé. Développement d'une application web permettant de gérer efficacement les activités d'un établissement de santé. Le système facilite l'enregistrement des patients, la gestion des rendez-vous, le suivi des dossiers médicaux et l'administration des informations hospitalières.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+
+    
+        <h3 id="section-contact">📬 CONTACT</h3>
+<form id="contactForm" action="mailto:dalandadll01@gmail.com" method="POST" enctype="text/plain" novalidate>
+    <div class="form-group">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" placeholder="Votre nom " required>
+        <span class="erreur" id="erreur-nom"></span>
+    </div>
+    <div class="form-group">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" placeholder="exemple@gmail.com" required>
+        <span class="erreur" id="erreur-email"></span>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+        <span class="erreur" id="erreur-message"></span>
+    </div>
+    <button type="submit" class="btn-envoyer">Envoyer ✉️</button>
+    <div id="succes-message" class="succes-message">
+        ✅ Merci ! Votre message a bien été envoyé.
+    </div>
+</form>
+    </div>
+
+    
+    <button id="top">↑</button>
+
+    <script src="tp.js"></script>
+</body>
+</html>
